@@ -24,6 +24,7 @@ Foreach ($Req_Var in $Req_Vars.Keys)
 
 $currentLanguage = (Get-Culture).Name
 if ($LanguageRegionCode -eq 'ja-JA') {$LanguageRegionCode = 'ja-JP'}
+if ($LanguageRegionCode -eq 'ko-KO') {$LanguageRegionCode = 'ko-KR'}
 
 if($LanguageRegionCode -ne $currentLanguage)
 {
