@@ -295,7 +295,7 @@
         "SecondaryInput":  null
     },
     {
-        "Language/Region":  "Croatian (Bosnia \u0026amp; Herzegovina)",
+        "Language/Region":  "Croatian (Bosnia \u0026 Herzegovina)",
         "PrimaryInput":  "hr-BA",
         "SecondaryInput":  null
     },
@@ -340,7 +340,7 @@
         "SecondaryInput":  null
     },
     {
-        "Language/Region":  "Dutch (Cura?ao)",
+        "Language/Region":  "Dutch (Curaçao)",
         "PrimaryInput":  "en-US",
         "SecondaryInput":  null
     },
@@ -520,7 +520,7 @@
         "SecondaryInput":  null
     },
     {
-        "Language/Region":  "English (Trinidad \u0026amp; Tobago)",
+        "Language/Region":  "English (Trinidad \u0026 Tobago)",
         "PrimaryInput":  "en-TT",
         "SecondaryInput":  null
     },
@@ -575,7 +575,7 @@
         "SecondaryInput":  "en-CA"
     },
     {
-        "Language/Region":  "French (C?te d?Ivoire)",
+        "Language/Region":  "French (Côte d’Ivoire)",
         "PrimaryInput":  "fr-CI",
         "SecondaryInput":  null
     },
@@ -605,7 +605,7 @@
         "SecondaryInput":  null
     },
     {
-        "Language/Region":  "French (R?union)",
+        "Language/Region":  "French (Réunion)",
         "PrimaryInput":  "fr-RE",
         "SecondaryInput":  null
     },
@@ -925,7 +925,7 @@
         "SecondaryInput":  "en-US"
     },
     {
-        "Language/Region":  "K?iche?",
+        "Language/Region":  "Kʼicheʼ",
         "PrimaryInput":  "quc-Latn-GT",
         "SecondaryInput":  null
     },
@@ -1185,7 +1185,7 @@
         "SecondaryInput":  null
     },
     {
-        "Language/Region":  "Portuguese (S?o Tom? \u0026amp; Pr?ncipe)",
+        "Language/Region":  "Portuguese (São Tomé \u0026 Príncipe)",
         "PrimaryInput":  "pt-PT",
         "SecondaryInput":  null
     },
@@ -1330,7 +1330,7 @@
         "SecondaryInput":  "en-US"
     },
     {
-        "Language/Region":  "Serbian (Latin, Bosnia \u0026amp; Herzegovina)",
+        "Language/Region":  "Serbian (Latin, Bosnia \u0026 Herzegovina)",
         "PrimaryInput":  "sr-Latn-BA",
         "SecondaryInput":  null
     },
