@@ -1,0 +1,1747 @@
+[
+    {
+        "Language/Region":  "Afrikaans",
+        "PrimaryInput":  "af-ZA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Afrikaans (Namibia)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Albanian",
+        "PrimaryInput":  "sq-AL",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Albanian (Kosovo)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Alsatian (France)",
+        "PrimaryInput":  "gsw-FR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Amharic",
+        "PrimaryInput":  "am-ET",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic",
+        "PrimaryInput":  "ar-SA",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Algeria)",
+        "PrimaryInput":  "ar-DZ",
+        "SecondaryInput":  "fr-FR"
+    },
+    {
+        "Language/Region":  "Arabic (Bahrain)",
+        "PrimaryInput":  "ar-BH",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Egypt)",
+        "PrimaryInput":  "ar-EG",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Iraq)",
+        "PrimaryInput":  "ar-IQ",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Jordan)",
+        "PrimaryInput":  "ar-JO",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Kuwait)",
+        "PrimaryInput":  "ar-KW",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Lebanon)",
+        "PrimaryInput":  "ar-LB",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Libya)",
+        "PrimaryInput":  "ar-LY",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Morocco)",
+        "PrimaryInput":  "ar-MA",
+        "SecondaryInput":  "fr-FR"
+    },
+    {
+        "Language/Region":  "Arabic (Oman)",
+        "PrimaryInput":  "ar-OM",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Qatar)",
+        "PrimaryInput":  "ar-QA",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Syria)",
+        "PrimaryInput":  "ar-SY",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (Tunisia)",
+        "PrimaryInput":  "ar-TN",
+        "SecondaryInput":  "fr-FR"
+    },
+    {
+        "Language/Region":  "Arabic (United Arab Emirates)",
+        "PrimaryInput":  "ar-AE",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Arabic (World)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Arabic (Yemen)",
+        "PrimaryInput":  "ar-YE",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Armenian",
+        "PrimaryInput":  "hy-AM",
+        "SecondaryInput":  "hy-AM"
+    },
+    {
+        "Language/Region":  "Assamese",
+        "PrimaryInput":  "as-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Asturian",
+        "PrimaryInput":  "es-ES_tradnl",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Azerbaijani",
+        "PrimaryInput":  "az-Latn-AZ",
+        "SecondaryInput":  "az-Cyrl-AZ"
+    },
+    {
+        "Language/Region":  "Azerbaijani (Cyrillic)",
+        "PrimaryInput":  "az-Cyrl-AZ",
+        "SecondaryInput":  "az-Latn-AZ"
+    },
+    {
+        "Language/Region":  "Bangla",
+        "PrimaryInput":  "bn-BD",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Bashkir",
+        "PrimaryInput":  "ba-RU",
+        "SecondaryInput":  "ru-RU"
+    },
+    {
+        "Language/Region":  "Basque",
+        "PrimaryInput":  "eu-ES",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Belarusian",
+        "PrimaryInput":  "be-BY",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Bengali (India)",
+        "PrimaryInput":  "bn-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Bodo",
+        "PrimaryInput":  "hi-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Bosnian",
+        "PrimaryInput":  "bs-Latn-BA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Bosnian (Cyrillic)",
+        "PrimaryInput":  "bs-Cyrl-BA",
+        "SecondaryInput":  "bs-Latn-BA"
+    },
+    {
+        "Language/Region":  "Breton",
+        "PrimaryInput":  "br-FR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Bulgarian",
+        "PrimaryInput":  "bg-BG",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Burmese",
+        "PrimaryInput":  "my-MM",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Catalan",
+        "PrimaryInput":  "ca-ES",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Catalan (Andorra)",
+        "PrimaryInput":  "fr-FR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Catalan (France)",
+        "PrimaryInput":  "fr-FR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Catalan (Italy)",
+        "PrimaryInput":  "it-IT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Central Atlas Tamazight",
+        "PrimaryInput":  "tzm-Latn-DZ",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Central Atlas Tamazight (Arabic)",
+        "PrimaryInput":  "ar-MA",
+        "SecondaryInput":  "fr-FR"
+    },
+    {
+        "Language/Region":  "Central Atlas Tamazight (Tifinagh)",
+        "PrimaryInput":  "tzm-Tfng-MA",
+        "SecondaryInput":  "fr-FR"
+    },
+    {
+        "Language/Region":  "Central Kurdish",
+        "PrimaryInput":  "ku-Arab-IQ",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Chechen",
+        "PrimaryInput":  "ru-RU",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Cherokee",
+        "PrimaryInput":  "chr-Cher-US",
+        "SecondaryInput":  "chr-Cher-US"
+    },
+    {
+        "Language/Region":  "Chinese",
+        "PrimaryInput":  "zh-CN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Chinese (Simplified, Hong Kong SAR)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Chinese (Simplified, Macao SAR)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Chinese (Traditional)",
+        "PrimaryInput":  "zh-TW",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Chinese (Traditional, Taiwan)",
+        "PrimaryInput":  "zh-TW",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Church Slavic",
+        "PrimaryInput":  "ru-RU",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Colognian",
+        "PrimaryInput":  "de-DE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Cornish",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Corsican",
+        "PrimaryInput":  "co-FR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Croatian",
+        "PrimaryInput":  "hr-HR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Croatian (Bosnia \u0026amp; Herzegovina)",
+        "PrimaryInput":  "hr-BA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Czech",
+        "PrimaryInput":  "cs-CZ",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Danish",
+        "PrimaryInput":  "da-DK",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Danish (Greenland)",
+        "PrimaryInput":  "da-DK",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Divehi",
+        "PrimaryInput":  "dv-MV",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Dutch",
+        "PrimaryInput":  "nl-NL",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Dutch (Aruba)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Dutch (Belgium)",
+        "PrimaryInput":  "nl-BE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Dutch (Bonaire, Sint Eustatius and Saba)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Dutch (Cura?ao)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Dutch (Sint Maarten)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Dutch (Suriname)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Dzongkha",
+        "PrimaryInput":  "dz-BT",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "English",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Australia)",
+        "PrimaryInput":  "en-AU",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Austria)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Belgium)",
+        "PrimaryInput":  "fr-BE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Belize)",
+        "PrimaryInput":  "en-BZ",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (British Virgin Islands)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Burundi)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Canada)",
+        "PrimaryInput":  "en-CA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Caribbean)",
+        "PrimaryInput":  "en-029",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Denmark)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Falkland Islands)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Finland)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Germany)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Gibraltar)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Guernsey)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Hong Kong SAR)",
+        "PrimaryInput":  "en-HK",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (India)",
+        "PrimaryInput":  "en-IN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Ireland)",
+        "PrimaryInput":  "en-IE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Isle of Man)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Israel)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  "he-IL"
+    },
+    {
+        "Language/Region":  "English (Jamaica)",
+        "PrimaryInput":  "en-JM",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Jersey)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Malaysia)",
+        "PrimaryInput":  "en-MY",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Malta)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Netherlands)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (New Zealand)",
+        "PrimaryInput":  "en-NZ",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Philippines)",
+        "PrimaryInput":  "en-PH",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Singapore)",
+        "PrimaryInput":  "en-SG",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Slovenia)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (South Africa)",
+        "PrimaryInput":  "en-ZA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Sweden)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Switzerland)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Trinidad \u0026amp; Tobago)",
+        "PrimaryInput":  "en-TT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (United Kingdom)",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "English (Zimbabwe)",
+        "PrimaryInput":  "en-ZW",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Estonian",
+        "PrimaryInput":  "et-EE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Faroese",
+        "PrimaryInput":  "fo-FO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Filipino",
+        "PrimaryInput":  "fil-PH",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Finnish",
+        "PrimaryInput":  "fi-FI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French",
+        "PrimaryInput":  "fr-FR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Belgium)",
+        "PrimaryInput":  "fr-BE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Cameroon)",
+        "PrimaryInput":  "fr-CM",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Canada)",
+        "PrimaryInput":  "fr-CA",
+        "SecondaryInput":  "en-CA"
+    },
+    {
+        "Language/Region":  "French (C?te d?Ivoire)",
+        "PrimaryInput":  "fr-CI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Haiti)",
+        "PrimaryInput":  "fr-HT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Luxembourg)",
+        "PrimaryInput":  "fr-LU",
+        "SecondaryInput":  "fr-LU"
+    },
+    {
+        "Language/Region":  "French (Mali)",
+        "PrimaryInput":  "fr-ML",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Monaco)",
+        "PrimaryInput":  "fr-MC",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Morocco)",
+        "PrimaryInput":  "fr-MA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (R?union)",
+        "PrimaryInput":  "fr-RE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Senegal)",
+        "PrimaryInput":  "fr-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "French (Switzerland)",
+        "PrimaryInput":  "fr-CH",
+        "SecondaryInput":  "de-CH"
+    },
+    {
+        "Language/Region":  "French Congo (DRC)",
+        "PrimaryInput":  "fr-CD",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Friulian",
+        "PrimaryInput":  "it-IT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah",
+        "PrimaryInput":  "ff-Latn-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Adlam)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Burkina Faso)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Cameroon)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Gambia)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Ghana)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Guinea)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Guinea-Bissau)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Liberia)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Mauritania)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Niger)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Nigeria)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Fulah (Latin, Sierra Leone)",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Galician",
+        "PrimaryInput":  "gl-ES",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Georgian",
+        "PrimaryInput":  "ka-GE",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "German",
+        "PrimaryInput":  "de-DE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "German (Austria)",
+        "PrimaryInput":  "de-AT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "German (Belgium)",
+        "PrimaryInput":  "fr-BE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "German (Italy)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "German (Liechtenstein)",
+        "PrimaryInput":  "de-LI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "German (Luxembourg)",
+        "PrimaryInput":  "de-LU",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "German (Switzerland)",
+        "PrimaryInput":  "de-CH",
+        "SecondaryInput":  "fr-CH"
+    },
+    {
+        "Language/Region":  "Greek",
+        "PrimaryInput":  "el-GR",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Guarani",
+        "PrimaryInput":  "gn-PY",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Gujarati",
+        "PrimaryInput":  "gu-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Hausa",
+        "PrimaryInput":  "ha-Latn-NG",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Hawaiian",
+        "PrimaryInput":  "haw-US",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Hebrew",
+        "PrimaryInput":  "he-IL",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Hindi",
+        "PrimaryInput":  "hi-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Hungarian",
+        "PrimaryInput":  "hu-HU",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Icelandic",
+        "PrimaryInput":  "is-IS",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Igbo",
+        "PrimaryInput":  "ig-NG",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Indonesian",
+        "PrimaryInput":  "id-ID",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Interlingua",
+        "PrimaryInput":  "fr-FR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Inuktitut",
+        "PrimaryInput":  "iu-Latn-CA",
+        "SecondaryInput":  "en-CA"
+    },
+    {
+        "Language/Region":  "Inuktitut (Syllabics)",
+        "PrimaryInput":  "iu-Cans-CA",
+        "SecondaryInput":  "en-CA"
+    },
+    {
+        "Language/Region":  "Irish",
+        "PrimaryInput":  "ga-IE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Irish (United Kingdom)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Italian",
+        "PrimaryInput":  "it-IT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Italian (Switzerland)",
+        "PrimaryInput":  "it-CH",
+        "SecondaryInput":  "it-CH"
+    },
+    {
+        "Language/Region":  "Italian (Vatican City)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Japanese",
+        "PrimaryInput":  "ja-JP",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Javanese",
+        "PrimaryInput":  "jv",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Javanese (Javanese)",
+        "PrimaryInput":  "jv-Java",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Kalaallisut",
+        "PrimaryInput":  "kl-GL",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Kannada",
+        "PrimaryInput":  "kn-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Kashmiri",
+        "PrimaryInput":  "ur-PK",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Kashmiri (Devanagari)",
+        "PrimaryInput":  "hi-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Kazakh",
+        "PrimaryInput":  "kk-KZ",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Khmer",
+        "PrimaryInput":  "km-KH",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Kinyarwanda",
+        "PrimaryInput":  "rw-RW",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Kiswahili",
+        "PrimaryInput":  "sw-KE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Kiswahili (Congo DRC)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Kiswahili (Tanzania)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Kiswahili (Uganda)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Konkani",
+        "PrimaryInput":  "kok-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Korean",
+        "PrimaryInput":  "ko-KR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Korean (North Korea)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Kyrgyz",
+        "PrimaryInput":  "ky-KG",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "K?iche?",
+        "PrimaryInput":  "quc-Latn-GT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Lao",
+        "PrimaryInput":  "lo-LA",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Latvian",
+        "PrimaryInput":  "lv-LV",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Lithuanian",
+        "PrimaryInput":  "lt-LT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Lower Sorbian",
+        "PrimaryInput":  "dsb-DE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Luxembourgish",
+        "PrimaryInput":  "lb-LU",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Macedonian",
+        "PrimaryInput":  "mk-MK",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Malagasy",
+        "PrimaryInput":  "mg",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Malay",
+        "PrimaryInput":  "ms-MY",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Malay (Brunei)",
+        "PrimaryInput":  "ms-BN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Malay (Indonesia)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Malay (Singapore)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Malayalam",
+        "PrimaryInput":  "ml-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Maltese",
+        "PrimaryInput":  "mt-MT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Manipuri",
+        "PrimaryInput":  "en-IN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Manx",
+        "PrimaryInput":  "en-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Maori",
+        "PrimaryInput":  "mi-NZ",
+        "SecondaryInput":  "en-NZ"
+    },
+    {
+        "Language/Region":  "Mapuche",
+        "PrimaryInput":  "arn-CL",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Marathi",
+        "PrimaryInput":  "mr-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Mazanderani",
+        "PrimaryInput":  "fa-IR",
+        "SecondaryInput":  "fa-IR"
+    },
+    {
+        "Language/Region":  "Mohawk",
+        "PrimaryInput":  "moh-CA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Mongolian",
+        "PrimaryInput":  "mn-MN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Mongolian (Traditional Mongolian)",
+        "PrimaryInput":  "mn-Mong-CN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Mongolian (Traditional Mongolian, Mongolia)",
+        "PrimaryInput":  "mn-Mong-MN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "N\u0027ko",
+        "PrimaryInput":  "nqo",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Nepali",
+        "PrimaryInput":  "ne-NP",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Nepali (India)",
+        "PrimaryInput":  "ne-IN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Northern Luri",
+        "PrimaryInput":  "ar-IQ",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Northern Sami",
+        "PrimaryInput":  "se-NO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Norwegian",
+        "PrimaryInput":  "nb-NO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Norwegian Nynorsk",
+        "PrimaryInput":  "nn-NO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Occitan",
+        "PrimaryInput":  "oc-FR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Odia",
+        "PrimaryInput":  "or-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Oromo",
+        "PrimaryInput":  "om-ET",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Oromo (Kenya)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Ossetic",
+        "PrimaryInput":  "ru-RU",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Papiamento",
+        "PrimaryInput":  "pap-029",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Pashto",
+        "PrimaryInput":  "ps-AF",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Pashto (Pakistan)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Persian",
+        "PrimaryInput":  "fa-IR",
+        "SecondaryInput":  "fa-IR"
+    },
+    {
+        "Language/Region":  "Persian (Afghanistan)",
+        "PrimaryInput":  "fa-AF",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Polish",
+        "PrimaryInput":  "pl-PL",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese",
+        "PrimaryInput":  "pt-BR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Angola)",
+        "PrimaryInput":  "pt-PT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Cabo Verde)",
+        "PrimaryInput":  "pt-PT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Equatorial Guinea)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Guinea-Bissau)",
+        "PrimaryInput":  "pt-PT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Luxembourg)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Macao SAR)",
+        "PrimaryInput":  "pt-PT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Mozambique)",
+        "PrimaryInput":  "pt-PT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Portugal)",
+        "PrimaryInput":  "pt-PT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Switzerland)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (S?o Tom? \u0026amp; Pr?ncipe)",
+        "PrimaryInput":  "pt-PT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Portuguese (Timor-Leste)",
+        "PrimaryInput":  "pt-PT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Prussian",
+        "PrimaryInput":  "de-DE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Punjabi",
+        "PrimaryInput":  "pa-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Punjabi",
+        "PrimaryInput":  "pa-Arab-PK",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Quechua",
+        "PrimaryInput":  "quz-BO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Quechua (Ecuador)",
+        "PrimaryInput":  "quz-EC",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Quechua (Peru)",
+        "PrimaryInput":  "quz-PE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Romanian",
+        "PrimaryInput":  "ro-RO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Romanian (Moldova)",
+        "PrimaryInput":  "ro-MD",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Romansh",
+        "PrimaryInput":  "rm-CH",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Russian",
+        "PrimaryInput":  "ru-RU",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Russian (Moldova)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sakha",
+        "PrimaryInput":  "sah-RU",
+        "SecondaryInput":  "ru-RU"
+    },
+    {
+        "Language/Region":  "Sami (Inari)",
+        "PrimaryInput":  "smn-FI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sami (Lule)",
+        "PrimaryInput":  "smj-SE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sami (Skolt)",
+        "PrimaryInput":  "sms-FI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sami (Southern)",
+        "PrimaryInput":  "sma-SE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sami, Lule (Norway)",
+        "PrimaryInput":  "smj-NO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sami, Northern (Finland)",
+        "PrimaryInput":  "se-FI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sami, Northern (Sweden)",
+        "PrimaryInput":  "se-SE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sami, Southern (Norway)",
+        "PrimaryInput":  "sma-NO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sanskrit",
+        "PrimaryInput":  "sa-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Scottish Gaelic",
+        "PrimaryInput":  "gd-GB",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Serbian",
+        "PrimaryInput":  "sr-Latn-RS",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Serbian (Cyrillic)",
+        "PrimaryInput":  "sr-Cyrl-RS",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Serbian (Cyrillic, Bosnia and Herzegovina)",
+        "PrimaryInput":  "sr-Cyrl-BA",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Serbian (Cyrillic, Kosovo)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Serbian (Cyrillic, Montenegro)",
+        "PrimaryInput":  "sr-Cyrl-ME",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Serbian (Latin, Bosnia \u0026amp; Herzegovina)",
+        "PrimaryInput":  "sr-Latn-BA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Serbian (Latin, Kosovo)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Serbian (Latin, Montenegro)",
+        "PrimaryInput":  "sr-Latn-ME",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sesotho",
+        "PrimaryInput":  "st-ZA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sesotho (Lesotho)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sesotho sa Leboa",
+        "PrimaryInput":  "nso-ZA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Setswana",
+        "PrimaryInput":  "tn-ZA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Setswana (Botswana)",
+        "PrimaryInput":  "tn-BW",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Shona",
+        "PrimaryInput":  "jv",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Sindhi",
+        "PrimaryInput":  "sd-Arab-PK",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Sindhi (Devanagari)",
+        "PrimaryInput":  "hi-IN",
+        "SecondaryInput":  "en-IN"
+    },
+    {
+        "Language/Region":  "Sinhala",
+        "PrimaryInput":  "si-LK",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Slovak",
+        "PrimaryInput":  "sk-SK",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Slovenian",
+        "PrimaryInput":  "sl-SI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Somali",
+        "PrimaryInput":  "so-SO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Somali (Djibouti)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Somali (Ethiopia)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Somali (Kenya)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish",
+        "PrimaryInput":  "es-ES",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Argentina)",
+        "PrimaryInput":  "es-AR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Belize)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Bolivia)",
+        "PrimaryInput":  "es-BO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Brazil)",
+        "PrimaryInput":  "en-US",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Chile)",
+        "PrimaryInput":  "es-CL",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Colombia)",
+        "PrimaryInput":  "es-CO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Costa Rica)",
+        "PrimaryInput":  "es-CR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Cuba)",
+        "PrimaryInput":  "es-MX",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Dominican Republic)",
+        "PrimaryInput":  "es-DO",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Ecuador)",
+        "PrimaryInput":  "es-EC",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (El Salvador)",
+        "PrimaryInput":  "es-SV",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Equatorial Guinea)",
+        "PrimaryInput":  "es-MX",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Guatemala)",
+        "PrimaryInput":  "es-GT",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Honduras)",
+        "PrimaryInput":  "es-HN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Latin America)",
+        "PrimaryInput":  "es-419",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Mexico)",
+        "PrimaryInput":  "es-MX",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Nicaragua)",
+        "PrimaryInput":  "es-NI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Panama)",
+        "PrimaryInput":  "es-PA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Paraguay)",
+        "PrimaryInput":  "es-PY",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Peru)",
+        "PrimaryInput":  "es-PE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Philippines)",
+        "PrimaryInput":  "es-MX",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Puerto Rico)",
+        "PrimaryInput":  "es-PR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (United States)",
+        "PrimaryInput":  "es-US",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Spanish (Uruguay)",
+        "PrimaryInput":  "es-UY",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Spanish (Venezuela)",
+        "PrimaryInput":  "es-VE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Standard Moroccan Tamazight",
+        "PrimaryInput":  "zgh",
+        "SecondaryInput":  "fr-FR"
+    },
+    {
+        "Language/Region":  "Swedish",
+        "PrimaryInput":  "sv-SE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Swedish (Finland)",
+        "PrimaryInput":  "sv-FI",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Swiss German",
+        "PrimaryInput":  "de-CH",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Syriac",
+        "PrimaryInput":  "syr-SY",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Tachelhit",
+        "PrimaryInput":  "tzm-Tfng-MA",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Tachelhit (Latin)",
+        "PrimaryInput":  "tzm-Latn-DZ",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Tajik",
+        "PrimaryInput":  "tg-Cyrl-TJ",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Tamil",
+        "PrimaryInput":  "ta-IN",
+        "SecondaryInput":  "en-IN"
+    },
+    {
+        "Language/Region":  "Tamil (Malaysia)",
+        "PrimaryInput":  "ta-IN",
+        "SecondaryInput":  "ms-MY"
+    },
+    {
+        "Language/Region":  "Tamil (Singapore)",
+        "PrimaryInput":  "ta-IN",
+        "SecondaryInput":  "en-SG"
+    },
+    {
+        "Language/Region":  "Tamil (Sri Lanka)",
+        "PrimaryInput":  "ta-LK",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Tatar",
+        "PrimaryInput":  "tt-RU",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Telugu",
+        "PrimaryInput":  "te-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Thai",
+        "PrimaryInput":  "th-TH",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Tibetan",
+        "PrimaryInput":  "bo-CN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Tibetan (India)",
+        "PrimaryInput":  "bo-CN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Tigrinya",
+        "PrimaryInput":  "ti-ET",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Turkish",
+        "PrimaryInput":  "tr-TR",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Turkmen",
+        "PrimaryInput":  "tk-TM",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Ukrainian",
+        "PrimaryInput":  "uk-UA",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Upper Sorbian",
+        "PrimaryInput":  "hsb-DE",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Urdu",
+        "PrimaryInput":  "ur-PK",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Urdu (India)",
+        "PrimaryInput":  "ur-IN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Uyghur",
+        "PrimaryInput":  "ug-CN",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Uzbek",
+        "PrimaryInput":  "uz-Latn-UZ",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Uzbek (Arabic)",
+        "PrimaryInput":  "ps-AF",
+        "SecondaryInput":  "en-US"
+    },
+    {
+        "Language/Region":  "Uzbek (Cyrillic)",
+        "PrimaryInput":  "uz-Cyrl-UZ",
+        "SecondaryInput":  "uz-Latn-UZ"
+    },
+    {
+        "Language/Region":  "Valencian (Spain)",
+        "PrimaryInput":  "ca-ES-valencia",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Vietnamese",
+        "PrimaryInput":  "vi-VN",
+        "SecondaryInput":  "vi-VN"
+    },
+    {
+        "Language/Region":  "Walser",
+        "PrimaryInput":  "de-CH",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Welsh",
+        "PrimaryInput":  "cy-GB",
+        "SecondaryInput":  "en-GB"
+    },
+    {
+        "Language/Region":  "Western Frisian",
+        "PrimaryInput":  "fy-NL",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Wolof",
+        "PrimaryInput":  "wo-SN",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Xitsonga",
+        "PrimaryInput":  "ts-ZA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "Yi",
+        "PrimaryInput":  "ii-CN",
+        "SecondaryInput":  "zh-CN"
+    },
+    {
+        "Language/Region":  "Yoruba",
+        "PrimaryInput":  "yo-NG",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "isiXhosa",
+        "PrimaryInput":  "xh-ZA",
+        "SecondaryInput":  null
+    },
+    {
+        "Language/Region":  "isiZulu",
+        "PrimaryInput":  "zu-ZA",
+        "SecondaryInput":  null
+    }
+]
