@@ -1,0 +1,47 @@
+[
+    {
+        "LanguageName" : "English",
+        "LanguageCode" : "en",
+        "RegionCode"   : "en-US"
+    },
+    {
+        "LanguageName" : "German",
+        "LanguageCode" : "de",
+        "RegionCode"   : "de-DE"
+    },
+    {
+        "LanguageName" : "Spanish",
+        "LanguageCode" : "es",
+        "RegionCode"   : "es-ES"
+    },
+    {
+        "LanguageName" : "French",
+        "LanguageCode" : "fr",
+        "RegionCode"   : "fr-FR"
+    },
+    {
+        "LanguageName" : "Japanese",
+        "LanguageCode" : "ja",
+        "RegionCode"   : "ja-JP"
+    },
+    {
+        "LanguageName" : "Korean",
+        "LanguageCode" : "ko",
+        "RegionCode"   : "ko-KR"
+    },
+    {
+        "LanguageName" : "Portuguese",
+        "LanguageCode" : "pt",
+        "RegionCode"   : "pt-BR"
+    },
+    {
+        "LanguageName" : "Chinese (Simplified)",
+        "LanguageCode" : "zh-Hans",
+        "RegionCode"   : "zh-CN"
+    },
+    {
+        "LanguageName" : "Chinese (Traditional)",
+        "LanguageCode" : "zh-Hant",
+        "RegionCode"   : "zh-TW"
+    }
+]
