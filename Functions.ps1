@@ -51,12 +51,12 @@ Function Get-GitHubContents
         [string]$AuthToken
     )
     If ([string]::IsNullOrWhiteSpace($AuthToken)) {
-        Write-Verbose "Parameter Set: Public"
+        Write-Verbose "Parameter Set: Public" -Verbose:(&{switch($args){"Continue"{$true};default{$false}}}($VerbosePreference))
         $Public = $true
     }
     else
     {
-        Write-Verbose "Parameter Set: Private"
+        Write-Verbose "Parameter Set: Private" -Verbose:(&{switch($args){"Continue"{$true};default{$false}}}($VerbosePreference))
     }
     Add-Type -AssemblyName System.Web
     $RestMethod_Parameters = @{}
@@ -84,7 +84,7 @@ Function Get-GitHubContents
             }
         )
     }
-    Write-Verbose "RestMethod_Parameters:`n$($RestMethod_Parameters | ConvertTo-Json | Out-String)"
+    Write-Verbose "RestMethod_Parameters:`n$($RestMethod_Parameters | ConvertTo-Json | Out-String)" -Verbose:(&{switch($args){"Continue"{$true};default{$false}}}($VerbosePreference))
     $Content = Invoke-RestMethod @RestMethod_Parameters
     If ($Public)
     {
