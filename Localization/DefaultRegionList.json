@@ -2,46 +2,64 @@
     {
         "LanguageName" : "English",
         "LanguageCode" : "en",
-        "RegionCode"   : "en-US"
+        "RegionCode"   : "en-US",
+        "DateFormat"   : "M/d/yyyy",
+        "TimeFormat"   : "HH:mm"
     },
     {
         "LanguageName" : "German",
         "LanguageCode" : "de",
-        "RegionCode"   : "de-DE"
+        "RegionCode"   : "de-DE",
+        "DateFormat"   : "dd.MM.yyyy",
+        "TimeFormat"   : "HH:mm"
     },
     {
         "LanguageName" : "Spanish",
         "LanguageCode" : "es",
-        "RegionCode"   : "es-ES"
+        "RegionCode"   : "es-ES",
+        "DateFormat"   : "dd/MM/yyyy",
+        "TimeFormat"   : "HH:mm"
     },
     {
         "LanguageName" : "French",
         "LanguageCode" : "fr",
-        "RegionCode"   : "fr-FR"
+        "RegionCode"   : "fr-FR",
+        "DateFormat"   : "dd/MM/yyyy",
+        "TimeFormat"   : "HH:mm"
     },
     {
         "LanguageName" : "Japanese",
         "LanguageCode" : "ja",
-        "RegionCode"   : "ja-JP"
+        "RegionCode"   : "ja-JP",
+        "DateFormat"   : "yyyy/MM/dd",
+        "TimeFormat"   : "HH:mm"
     },
     {
         "LanguageName" : "Korean",
         "LanguageCode" : "ko",
-        "RegionCode"   : "ko-KR"
+        "RegionCode"   : "ko-KR",
+        "DateFormat"   : "yyyy-MM-dd",
+        "TimeFormat"   : "HH:mm"
     },
     {
         "LanguageName" : "Portuguese",
         "LanguageCode" : "pt",
-        "RegionCode"   : "pt-BR"
+        "RegionCode"   : "pt-BR",
+        "DateFormat"   : "dd/MM/yyyy",
+        "TimeFormat"   : "HH:mm"
     },
     {
         "LanguageName" : "Chinese (Simplified)",
         "LanguageCode" : "zh-Hans",
-        "RegionCode"   : "zh-CN"
+        "RegionCode"   : "zh-CN",
+        "DateFormat"   : "yyyy-MM-dd",
+        "TimeFormat"   : "HH:mm"
     },
     {
         "LanguageName" : "Chinese (Traditional)",
         "LanguageCode" : "zh-Hant",
-        "RegionCode"   : "zh-TW"
+        "RegionCode"   : "zh-TW",
+        "DateFormat"   : "yyyy-MM-dd",
+        "TimeFormat"   : "HH:mm"
     }
 ]
