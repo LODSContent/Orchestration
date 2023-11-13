@@ -53,7 +53,8 @@ if($LanguageRegionCode -ne $currentLanguage)
             # Find all matching major language inputs
             $LanguageInput = $(
                 $LanguageRegionCode # Set Lab langauge as default
-                $languagePacks | Where-Object {$PSItem -match ($LanguageRegionCode.Split('-')[0])} # Add other regions in matching language
+                #$languagePacks | Where-Object {$PSItem -match ($LanguageRegionCode.Split('-')[0])} # Add other regions in matching language
+                [Globalization.CultureInfo]::GetCultures('AllCultures').Name  | Where-Object {$PSItem -match "^$($LanguageRegionCode.Split('-')[0])-"} # Add other regions in matching language
                 "en-US" # Add English as a fall back
             )
             Set-WinUserLanguageList $LanguageInput -force
