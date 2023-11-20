@@ -13,22 +13,58 @@ $InformationPreference = 'Ignore'
 $Req_Vars = @{
     LanguageCode = '@lab.LanguageCode'
     DefaultRegionList = 'LODSContent/Orchestration/Localization/DefaultRegionList.json'
-    AdminUser = '@lab.CloudCredential(1).AdministrativeUsername'
-    AdminPassword = '@lab.CloudCredential(1).AdministrativePassword'
+    Admin_Set = @{
+        AdminUser = '@lab.CloudCredential(1).AdministrativeUsername'
+        AdminPassword = '@lab.CloudCredential(1).AdministrativePassword'
+    }
+    CloudSlice_Set = @{
+        appID = '00000000-0000-0000-0000-000000000000'
+        appSecret = 'secret'
+        tenant = '00000000-0000-0000-0000-000000000000'
+        PortalUser = '@lab.CloudPortalCredential(1).Username'
+    }
 }
 
 # Test for Variables
 Foreach ($Req_Var in $Req_Vars.Keys)
 {
-    if (-not (Get-Variable -name $Req_Var -ErrorAction Ignore))
+    if ($Req_Var -notmatch '_Set')
     {
-        Write-Error "Required Variable missing: '$Req_Var'"
+        if (-not (Get-Variable -name $Req_Var -ErrorAction Ignore))
+        {
+            Write-Error "Required Variable missing: '$Req_Var'"
+        }
+        if ((Get-Variable -name $Req_Var -ErrorAction Ignore).Value -match "^@lab")
+        {
+            Write-Error "LabVariable '$((Get-Variable -name $Req_Var).Value)' invalid"
+        }
     }
-    if ((Get-Variable -name $Req_Var).Value -match "^@lab")
+    else
     {
-        Write-Error "LabVariable '$((Get-Variable -name $Req_Var).Value)' invalid"
+        $SetTotal = $Req_Vars.Item($Req_Var).Count
+        $SetCount = 0
+        Foreach ($Req_SubVar in $Req_Vars.Item($Req_Var).Keys)
+        {
+            if (-not (Get-Variable -name $Req_SubVar -ErrorAction Ignore))
+            {
+                $ErrorMessage += "Required Variable missing: '$Req_SubVar'" | Out-String
+            } elseif ((Get-Variable -name $Req_SubVar -ErrorAction Ignore).Value -match "^@lab")
+            {
+                $ErrorMessage += "LabVariable '$((Get-Variable -name $Req_SubVar -ErrorAction Ignore).Value)' invalid" | Out-String
+            } else {$SetCount++}
+        }
+        If ($SetCount -ne $SetTotal)
+        {
+            $ErrorMessage += "Set: $Req_Var not complete" | Out-String
+        }
+        else
+        {
+            [string[]]$ParamSet += $Req_Var
+        }
     }
 }
+If ($null -eq $ParamSet) {throw $ErrorMessage}
+elseif ($ParamSet.Count -gt 1) {throw "Both Admin and CloudSlice variables defined. Only define one."}
 
 # Test Environment
 ## Module
@@ -42,7 +78,21 @@ $LanguageFormat = $DefaultRegionList | Where-Object {$_.LanguageCode -eq $Langua
 $CountryCode = $LanguageFormat.RegionCode.Split('-')[1]
 $RegionCode = $LanguageFormat.RegionCode
 
-$Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList ($AdminUser, (ConvertTo-SecureString -AsPlainText -Force -String $AdminPassword))
+switch ($ParamSet)
+{
+    'Admin_Set' {
+        $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList ($AdminUser, (ConvertTo-SecureString -AsPlainText -Force -String $AdminPassword))
+        $ConnectAzAccount = {
+            Connect-AzAccount -Credential $Credential
+        }
+    }
+    'CloudSlice_Set' {
+        $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList ($appID, (ConvertTo-SecureString -AsPlainText -Force -String $appSecret))
+        $ConnectAzAccount = {
+            Connect-AzAccount -ServicePrincipal -Credential $Credential -Tenant $tenant
+        }
+    }
+}
 
 ## Reconfigure Mailbox Region
 #$dateFormat = $LanguageFormat.DateFormat
@@ -53,14 +103,21 @@ $Credential = New-Object -TypeName System.Management.Automation.PSCredential -Ar
 while ($i++ -lt 3)
 {
     try {
-        $AzAdConnect = Connect-AzAccount -Credential $Credential
+        $AzAdConnect = . $ConnectAzAccount
         break
     }catch {$ErrorMessage += $_}
 }
 If ($null -eq $AzAdConnect) {throw "Failed to connect to Azure AD"}
 
 ## Pull all users and update both AzADUser and MailboxRegionalConfig
-$users = Get-AzADUser
+$users = $(
+    switch ($ParamSet)
+    {
+        'Admin_Set' {Get-AzADUser}
+        'CloudSlice_Set' {Get-AzADUser -UserPrincipalName $PortalUser}
+    }
+)
+If ($null -eq $users) {Write-Error "No cloud users found."}
 foreach ($user in $users) {
     Update-AzADUser -UPNOrObjectId $user.UserPrincipalName -PreferredLanguage $RegionCode -UsageLocation $CountryCode
  
