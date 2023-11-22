@@ -48,7 +48,11 @@ Function Get-GitHubContents
         [string]$FilePath,
 
         [Parameter(ParameterSetName = 'Private', Position = 3)]
-        [string]$AuthToken
+        [string]$AuthToken,
+
+        [Parameter(ParameterSetName = 'Public', Position = 4)]
+        [Parameter(ParameterSetName = 'Private', Position = 4)]
+        [string]$OutFile
     )
     If ([string]::IsNullOrWhiteSpace($AuthToken)) {
         Write-Verbose "Parameter Set: Public" -Verbose:(&{switch($args){"Continue"{$true};default{$false}}}($VerbosePreference))
@@ -76,7 +80,7 @@ Function Get-GitHubContents
             [System.Web.HttpUtility]::UrlPathEncode("https://api.github.com/repos/${Account}/${Repo}/contents/${FilePath}")
         )
         $RestMethod_Parameters.Add(
-            'Header',
+            'Headers',
             @{
                 Accept = "application/vnd.github+json"
                 Authorization = "Bearer ${AuthToken}"
@@ -88,10 +92,24 @@ Function Get-GitHubContents
     $Content = Invoke-RestMethod @RestMethod_Parameters
     If ($Public)
     {
-        return $Content
+        If ([string]::IsNullOrWhiteSpace($OutFile))
+        {
+            return $Content
+        }
+        Else
+        {
+            Invoke-WebRequest -Uri $Content.download_url -OutFile $OutFile
+        }
     }
     Else
     {
-        return [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($Content.content)))
+        If ([string]::IsNullOrWhiteSpace($OutFile))
+        {
+            return [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String(($Content.content)))
+        }
+        Else
+        {
+            Invoke-WebRequest -Uri $Content.download_url -OutFile $OutFile
+        }
     }
 }
