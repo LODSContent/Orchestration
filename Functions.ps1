@@ -72,6 +72,13 @@ Function Get-GitHubContents
             'URI',
             [System.Web.HttpUtility]::UrlPathEncode("https://raw.githubusercontent.com/${Account}/${Repo}/main/${FilePath}")
         )
+        If (-not [string]::IsNullOrWhiteSpace($OutFile))
+        {
+            $RestMethod_Parameters.Add(
+                'OutFile',
+                $OutFile
+            )
+        }
     }
     Else # Private
     {
@@ -95,10 +102,6 @@ Function Get-GitHubContents
         If ([string]::IsNullOrWhiteSpace($OutFile))
         {
             return $Content
-        }
-        Else
-        {
-            Invoke-WebRequest -Uri $Content.download_url -OutFile $OutFile
         }
     }
     Else
