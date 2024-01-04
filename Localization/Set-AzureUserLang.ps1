@@ -8,6 +8,7 @@
 
 $WarningPreference = 'Ignore'
 $InformationPreference = 'Ignore'
+$ParamSet = $null
 
 # Required variables
 $Req_Vars = @{
