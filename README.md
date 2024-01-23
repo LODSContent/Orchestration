@@ -35,6 +35,14 @@ The Bootstrap scripts are exceuted to pull down and gain access to other scripts
 - The global variable containing the script(s) is decoded and decompressed to then be invoked.
 - If the script is passing a "$Reboot" variable, an _if_ statement should be included.
 
+### v3
+
+**Bootstrap_v3.ps1**
+
+- The _BootStrap_v3.ps1_ script is a trimmed version to execute in VM environment.
+  - The VM does require internet access to access the git repo.
+- The calling of scripts can be modified to access other public repos.
+
 ## Script Usage
 
 - Scripts are stored in folders categorized to their uses.
