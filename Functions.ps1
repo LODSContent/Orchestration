@@ -3,15 +3,26 @@
     This script will be invoked with no new scope.
 #>
 
-Function RunElevated($ScriptBLock)
+Function RunElevated()
 {
+    Param (
+        $ScriptBlock,
+        [switch]$Wait
+    )
     <#
         This function attempts to create an elevated process to execute the provided script block.
     #>
     $newProcess = new-object System.Diagnostics.ProcessStartInfo "PowerShell"
     $newProcess.Arguments = $ScriptBlock
     $newProcess.Verb = "runas"
-    [void][System.Diagnostics.Process]::Start($newProcess)
+    $Process = [System.Diagnostics.Process]::Start($newProcess)
+    If ($Wait)
+    {
+        while (Get-Process -Id $Process.Id -ErrorAction Ignore)
+        {
+            Start-Sleep -Milliseconds 300
+        }
+    }
 }
 
 Function Get-GeoId($Name='*')
