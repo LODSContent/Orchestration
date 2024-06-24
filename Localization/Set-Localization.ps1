@@ -69,7 +69,7 @@ if($LanguageRegionCode -ne $currentLanguage)
             # Remove deprecated scheduled task
             if (Get-ScheduledTask -TaskName "Localization" -ErrorAction Ignore)
             {
-                Disable-ScheduledTask -TaskName "Localization" | Out-Null
+                RunElevated({Disable-ScheduledTask -TaskName "Localization"})
             }
             # Reboot required
             $Reboot = $true
