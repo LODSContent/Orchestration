@@ -25,6 +25,32 @@ Function RunElevated()
     }
 }
 
+Function RunScheduledTask
+{
+    Param ([string]$Command)
+    <#
+        This function attempts to create a scheduled task as the current user to execute the provided script block.
+    #>
+    $StartProgram = "powershell.exe"
+    $Arguments = (
+        "-WindowStyle Hidden",
+        "-command `"${Command}`""
+    ) -join " "
+
+    $action = New-ScheduledTaskAction -Execute $StartProgram -Argument $Arguments
+    $principal = New-ScheduledTaskPrincipal -UserId $(whoami)
+    $settings = New-ScheduledTaskSettingsSet
+    $task = New-ScheduledTask -Action $action -Principal $principal -Settings $settings
+
+    $ScheduledTask = Register-ScheduledTask -TaskName "ScriptExecute" -InputObject $task
+
+    $ScheduledTask | Start-ScheduledTask
+    while (-not (($ScheduledTask | Get-ScheduledTaskInfo).LastTaskResult -in 0,1)) {Start-Sleep -Seconds 1}
+    if (($ScheduledTask | Get-ScheduledTaskInfo).LastTaskResult -eq 1)
+    {Write-Error "Command '$command' ended with error."}
+    $ScheduledTask | Unregister-ScheduledTask -Confirm:$false
+}
+
 Function Get-GeoId($Name='*')
 {
     $cultures = [System.Globalization.CultureInfo]::GetCultures('InstalledWin32Cultures') #| Out-GridView
