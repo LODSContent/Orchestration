@@ -52,6 +52,7 @@ if($LanguageRegionCode -ne $currentLanguage)
             #Set-WinSystemLocale $LanguageRegionCode
             RunScheduledTask -Command "Set-WinSystemLocale $LanguageRegionCode"
             #Set-WinHomeLocation $(Get-GeoId($LanguageRegionCode))
+            $GeoID = Get-GeoId($LanguageRegionCode)
             RunScheduledTask -Command "Set-WinHomeLocation $GeoID"
             
             # Find all matching major language inputs
