@@ -3,6 +3,7 @@
 #>
 
 # Functions used:
+#   RunScheduledTask
 #   RunElevated
 #   Get-GeoId
 
@@ -46,9 +47,12 @@ if($LanguageRegionCode -ne $currentLanguage)
                 Set-ItemProperty -Path $registryPath -Name 'OverrideKeyboardIdentifier' -Value 'PCAT_106KEY' -Type String
                 Set-ItemProperty -Path $registryPath -Name 'OverrideKeyboardSubtype' -Value 0x00000002 -Type DWord
             }
-            Set-Culture $LanguageRegionCode
-            Set-WinSystemLocale $LanguageRegionCode
-            Set-WinHomeLocation $(Get-GeoId($LanguageRegionCode))
+            #Set-Culture $LanguageRegionCode
+            RunScheduledTask -Command "Set-Culture $LanguageRegionCode"
+            #Set-WinSystemLocale $LanguageRegionCode
+            RunScheduledTask -Command "Set-WinSystemLocale $LanguageRegionCode"
+            #Set-WinHomeLocation $(Get-GeoId($LanguageRegionCode))
+            RunScheduledTask -Command "Set-WinHomeLocation $GeoID"
             
             # Find all matching major language inputs
             $LanguageInput = $(
@@ -57,7 +61,9 @@ if($LanguageRegionCode -ne $currentLanguage)
                 [Globalization.CultureInfo]::GetCultures('AllCultures').Name  | Where-Object {$PSItem -match "^$($LanguageRegionCode.Split('-')[0])-"} # Add other regions in matching language
                 "en-US" # Add English as a fall back
             )
-            Set-WinUserLanguageList $LanguageInput -force
+            #Set-WinUserLanguageList $LanguageInput -force
+            $LanguageInput = $LanguageInput -join ","
+            RunScheduledTask -Command "Set-WinUserLanguageList ('${LanguageInput}' -split ',') -force -WarningAction SilentlyContinue"
             RunElevated({New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft" -Name "Edge" -Force})
             RunElevated({New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "SpellcheckLanguage" -Force})
             New-Item -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Force
