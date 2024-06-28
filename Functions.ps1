@@ -42,7 +42,17 @@ Function RunScheduledTask
     $settings = New-ScheduledTaskSettingsSet
     $task = New-ScheduledTask -Action $action -Principal $principal -Settings $settings
 
-    $ScheduledTask = Register-ScheduledTask -TaskName "ScriptExecute" -InputObject $task
+    $ScheduledTask_Parameters = @{}
+    $ScheduledTask_Parameters.Add('TaskName',"ScriptExecute")
+    $ScheduledTask_Parameters.Add('InputObject',$task)
+    If ($VMCredentials)
+    {
+        $ScheduledTask_Parameters.Add('User',$VMCredentials.User)
+        $ScheduledTask_Parameters.Add('Password',$VMCredentials.Password)
+    }
+
+    #$ScheduledTask = Register-ScheduledTask -TaskName "ScriptExecute" -InputObject $task
+    $ScheduledTask = Register-ScheduledTask @ScheduledTask_Parameters
 
     $ScheduledTask | Start-ScheduledTask
     while (-not (($ScheduledTask | Get-ScheduledTaskInfo).LastTaskResult -in 0,1)) {Start-Sleep -Seconds 1}
