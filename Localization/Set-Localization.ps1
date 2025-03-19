@@ -54,13 +54,22 @@ if($LanguageRegionCode -ne $currentLanguage)
             Set-ItemProperty -Path $registryPath -Name 'OverrideKeyboardIdentifier' -Value 'PCAT_106KEY' -Type String
             Set-ItemProperty -Path $registryPath -Name 'OverrideKeyboardSubtype' -Value 0x00000002 -Type DWord
         }
+        $RunScheduledTask_Params = @{}
+        $RunScheduledTask_Params.Add("Command","")
+        If (-not [string]::IsNullOrWhiteSpace($VMUser))
+        {
+            $RunScheduledTask_Params.Add("User",$VMUser)
+        }
         #Set-Culture $LanguageRegionCode
-        RunScheduledTask -Command "Set-Culture $LanguageRegionCode"
+        $RunScheduledTask_Params.Command = "Set-Culture $LanguageRegionCode"
+        RunScheduledTask @RunScheduledTask_Params
         #Set-WinSystemLocale $LanguageRegionCode
-        RunScheduledTask -Command "Set-WinSystemLocale $LanguageRegionCode"
+        $RunScheduledTask_Params.Command = "Set-WinSystemLocale $LanguageRegionCode"
+        RunScheduledTask @RunScheduledTask_Params
         #Set-WinHomeLocation $(Get-GeoId($LanguageRegionCode))
         $GeoID = Get-GeoId($LanguageRegionCode)
-        RunScheduledTask -Command "Set-WinHomeLocation $GeoID"
+        $RunScheduledTask_Params.Command = "Set-WinHomeLocation $GeoID"
+        RunScheduledTask @RunScheduledTask_Params
         
         # Find all matching major language inputs
         $LanguageInput = $(
