@@ -42,7 +42,7 @@ Function RunScheduledTask
 
     $action = New-ScheduledTaskAction -Execute $StartProgram -Argument $Arguments
     $RunAsUser = $(
-        if ([strng]::IsNullOrWhiteSpace($User)) {whoami}
+        if ([string]::IsNullOrWhiteSpace($User)) {whoami}
         else {("${env:USERDOMAIN}",$User) -join "\"}
     )
     $principal = New-ScheduledTaskPrincipal -UserId $RunAsUser
