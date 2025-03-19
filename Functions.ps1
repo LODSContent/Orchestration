@@ -27,7 +27,10 @@ Function RunElevated()
 
 Function RunScheduledTask
 {
-    Param ([string]$Command)
+    Param (
+        [string]$Command,
+        [string]$User
+    )
     <#
         This function attempts to create a scheduled task as the current user to execute the provided script block.
     #>
@@ -38,7 +41,11 @@ Function RunScheduledTask
     ) -join " "
 
     $action = New-ScheduledTaskAction -Execute $StartProgram -Argument $Arguments
-    $principal = New-ScheduledTaskPrincipal -UserId $(whoami)
+    $RunAsUser = $(
+        if ([strng]::IsNullOrWhiteSpace($User)) {whoami}
+        else {("${env:USERDOMAIN}",$User) -join "\"}
+    )
+    $principal = New-ScheduledTaskPrincipal -UserId $RunAsUser
     $settings = New-ScheduledTaskSettingsSet
     $task = New-ScheduledTask -Action $action -Principal $principal -Settings $settings
 
