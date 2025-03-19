@@ -80,7 +80,8 @@ if($LanguageRegionCode -ne $currentLanguage)
         )
         #Set-WinUserLanguageList $LanguageInput -force
         $LanguageInput = $LanguageInput -join ","
-        RunScheduledTask -Command "Set-WinUserLanguageList ('${LanguageInput}' -split ',') -force -WarningAction SilentlyContinue"
+        $RunScheduledTask_Params.Command = "Set-WinUserLanguageList ('${LanguageInput}' -split ',') -force -WarningAction SilentlyContinue"
+        RunScheduledTask @RunScheduledTask_Params
         RunElevated({New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft" -Name "Edge" -Force})
         RunElevated({New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "SpellcheckLanguage" -Force})
         New-Item -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Force
