@@ -12,69 +12,68 @@ $WarningPreference = 'Ignore'
 $InformationPreference = 'Ignore'
 $ParamSet = $null
 
-# Required variables
-$Req_Vars = @{
-    LanguageCode = '@lab.LanguageCode'
-    DefaultRegionList = 'LODSContent/Orchestration/Localization/DefaultRegionList.json'
-    Admin_Set = @{
-        AdminUser = '@lab.CloudCredential(1).AdministrativeUsername'
-        AdminPassword = '@lab.CloudCredential(1).AdministrativePassword'
-    }
-    CloudSlice_Set = @{
-        appID = '00000000-0000-0000-0000-000000000000'
-        appSecret = 'secret'
-        tenant = '00000000-0000-0000-0000-000000000000'
-        PortalUser = '@lab.CloudPortalCredential(1).Username'
-    }
-}
-
-# Test for Variables
-Foreach ($Req_Var in $Req_Vars.Keys)
-{
-    if ($Req_Var -notmatch '_Set')
-    {
-        if (-not (Get-Variable -name $Req_Var -ErrorAction Ignore))
-        {
-            Write-Error "Required Variable missing: '$Req_Var'"
-        }
-        if ((Get-Variable -name $Req_Var -ErrorAction Ignore).Value -match "^@lab")
-        {
-            Write-Error "LabVariable '$((Get-Variable -name $Req_Var).Value)' invalid"
-        }
-    }
-    else
-    {
-        $SetTotal = $Req_Vars.Item($Req_Var).Count
-        $SetCount = 0
-        Foreach ($Req_SubVar in $Req_Vars.Item($Req_Var).Keys)
-        {
-            if (-not (Get-Variable -name $Req_SubVar -ErrorAction Ignore))
-            {
-                $ErrorMessage += "Required Variable missing: '$Req_SubVar'" | Out-String
-            } elseif ((Get-Variable -name $Req_SubVar -ErrorAction Ignore).Value -match "^@lab")
-            {
-                $ErrorMessage += "LabVariable '$((Get-Variable -name $Req_SubVar -ErrorAction Ignore).Value)' invalid" | Out-String
-            } else {$SetCount++}
-        }
-        If ($SetCount -ne $SetTotal)
-        {
-            $ErrorMessage += "Set: $Req_Var not complete" | Out-String
-        }
-        else
-        {
-            [string[]]$ParamSet += $Req_Var
-        }
-    }
-}
-If ($null -eq $ParamSet) {throw $ErrorMessage}
-elseif ($ParamSet.Count -gt 1) {throw "Both Admin and CloudSlice variables defined. Only define one."}
-
 # Test Environment
 try {$AzContext = Get-AzContext -ErrorAction Stop} catch {}
 
 If ($null -eq $AzContext)
 {
     Write-Output "No AZ context"
+    # Required variables
+    $Req_Vars = @{
+        LanguageCode = '@lab.LanguageCode'
+        DefaultRegionList = 'LODSContent/Orchestration/Localization/DefaultRegionList.json'
+        Admin_Set = @{
+            AdminUser = '@lab.CloudCredential(1).AdministrativeUsername'
+            AdminPassword = '@lab.CloudCredential(1).AdministrativePassword'
+        }
+        CloudSlice_Set = @{
+            appID = '00000000-0000-0000-0000-000000000000'
+            appSecret = 'secret'
+            tenant = '00000000-0000-0000-0000-000000000000'
+            PortalUser = '@lab.CloudPortalCredential(1).Username'
+        }
+    }
+
+    # Test for Variables
+    Foreach ($Req_Var in $Req_Vars.Keys)
+    {
+        if ($Req_Var -notmatch '_Set')
+        {
+            if (-not (Get-Variable -name $Req_Var -ErrorAction Ignore))
+            {
+                Write-Error "Required Variable missing: '$Req_Var'"
+            }
+            if ((Get-Variable -name $Req_Var -ErrorAction Ignore).Value -match "^@lab")
+            {
+                Write-Error "LabVariable '$((Get-Variable -name $Req_Var).Value)' invalid"
+            }
+        }
+        else
+        {
+            $SetTotal = $Req_Vars.Item($Req_Var).Count
+            $SetCount = 0
+            Foreach ($Req_SubVar in $Req_Vars.Item($Req_Var).Keys)
+            {
+                if (-not (Get-Variable -name $Req_SubVar -ErrorAction Ignore))
+                {
+                    $ErrorMessage += "Required Variable missing: '$Req_SubVar'" | Out-String
+                } elseif ((Get-Variable -name $Req_SubVar -ErrorAction Ignore).Value -match "^@lab")
+                {
+                    $ErrorMessage += "LabVariable '$((Get-Variable -name $Req_SubVar -ErrorAction Ignore).Value)' invalid" | Out-String
+                } else {$SetCount++}
+            }
+            If ($SetCount -ne $SetTotal)
+            {
+                $ErrorMessage += "Set: $Req_Var not complete" | Out-String
+            }
+            else
+            {
+                [string[]]$ParamSet += $Req_Var
+            }
+        }
+    }
+    If ($null -eq $ParamSet) {throw $ErrorMessage}
+    elseif ($ParamSet.Count -gt 1) {throw "Both Admin and CloudSlice variables defined. Only define one."}
     # Test Environment
     ## Module
     if (Get-Module -ListAvailable -Name Az*) {throw "Remove all Az modules from the environment."}
