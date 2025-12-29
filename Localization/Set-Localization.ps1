@@ -82,13 +82,26 @@ if($LanguageRegionCode -ne $currentLanguage)
         $LanguageInput = $LanguageInput -join ","
         $RunScheduledTask_Params.Command = "Set-WinUserLanguageList ('${LanguageInput}' -split ',') -force -WarningAction SilentlyContinue"
         RunScheduledTask @RunScheduledTask_Params
+
+        # Set policy for Edge to preferred language
         RunElevated({New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft" -Name "Edge" -Force})
         RunElevated({New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "SpellcheckLanguage" -Force})
-        New-Item -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Force
+        If (-not [string]::IsNullOrWhiteSpace($VMUser))
+        {
+            $userSID = (Get-LocalUser -Name $VMUser).SID.Value
+            #User HivePath
+            $HKCU = "HKU:\${userSID}"
+            New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS | Out-Null
+        }
+        Else
+        {
+            $HKCU = "HKCU:"
+        }
+        New-Item -Path "${HKCU}\SOFTWARE\Policies\Microsoft\Edge" -Force
         RunElevated($({New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge" -Name "ApplicationLocaleValue" -Value {0}} -f $LanguageRegionCode))
         RunElevated($({New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Edge\SpellcheckLanguage" -Name 1 -Value {0}} -f $LanguageRegionCode))
-        New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Name "ApplicationLocaleValue" -Value $LanguageRegionCode
-        New-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Edge" -Name "DefinePreferredLanguages" -Value $LanguageRegionCode
+        New-ItemProperty -Path "${HKCU}\SOFTWARE\Policies\Microsoft\Edge" -Name "ApplicationLocaleValue" -Value $LanguageRegionCode
+        New-ItemProperty -Path "${HKCU}\SOFTWARE\Policies\Microsoft\Edge" -Name "DefinePreferredLanguages" -Value $LanguageRegionCode
         
         # Remove deprecated scheduled task
         if (Get-ScheduledTask -TaskName "Localization" -ErrorAction Ignore)
